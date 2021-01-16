@@ -133,7 +133,7 @@ node      LoadBalancer   10.39.244.136   35.232.249.48   3000:30743/TCP   2m
 Once everything is up, you can hit the API like so:
 
 1. [http://EXTERNAL_IP:3000](http://EXTERNAL_IP:3000)
-2. [http://EXTERNAL_IP:3000/todos](http://EXTERNAL_IP:3000/todos/1) 
+2. [http://EXTERNAL_IP:3000/todos/1](http://EXTERNAL_IP:3000/todos/1) 
 
 
 ## Usage with Jenkins automation
