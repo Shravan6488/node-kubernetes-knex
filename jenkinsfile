@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+    stages {
+
+
+      stage('Build and push Dcoker image') {
+        steps {
+            sh "chmod +x Makefile && make kube-build"
+        }
+
+      }
+
+       stage('Deploy image into  Development') {
+            steps {
+                sh "makekube-deploy-node-dev"
+                sh "make kube-deploy-node-dev"
+                }
+            }
+
+
+        stage('Deploy image into  Production') {
+            steps {
+                    timeout(time: 30, unit: 'MINUTES') {
+                    input message: 'Proceed PRD Deployment ? (Click "Proceed" to continue)'
+                }
+                sh "makekube-deploy-node-prd"
+                sh "make kube-deploy-node-prd"
+
+
+                }
+            }
+    }
+    }
+ 
