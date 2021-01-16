@@ -146,7 +146,7 @@ If you want to perform CI/CD automation you can use the EXTERNAL_IP URL of jenki
 - jenkinsfile is automatically scan by Pipeline.
 - Once everything is configured you can manually trigger the job/perform any code push to your repository
 
-#####Note: It will automatically moce to prod deployment and wait for your approval to perform prod deployment
+####Note: It will automatically moce to prod deployment and wait for your approval to perform prod deployment
 
 
 - here is the document for better understanding of multibranch pipeline concept. https://www.jenkins.io/doc/book/pipeline/multibranch/
