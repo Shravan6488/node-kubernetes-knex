@@ -104,7 +104,7 @@ After everything is up and running you can start hitting the API
 server via port `3000` like so:
 
 1. [http://localhost:3000](http://localhost:3000)
-2. [http://localhost:3000/todos](http://localhost:3000/todos/1)
+2. [http://localhost:3000/todos/1](http://localhost:3000/todos/1)
 
 ## Usage with Minikube + Kubernetes
 Once `minikube` is running (via `minikube start`), you can trigger a
